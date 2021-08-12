@@ -34,11 +34,13 @@ OpenJTalkをUnity上で使うためのプラグインです。
 
 <br>
 
-- 違う声を使いたいです
+- 違う音声を使いたい
 
-C:\open_jtalk\voice に入っているhtsvoiceであれば使うことが出来ます。Speak()の第二引数で".htsvoice"の名前を**拡張子抜きで指定**します。
+C:\open_jtalk\voice に入っているhtsvoiceであれば使うことが出来ます。Speak()の第二引数で名前を指定します。
 
-例：takumi_happy.htsvoice → OpenJTalkForUnity.Speak("今日は良い天気ですね。", "takumi_happy");
+例：takumi_happy.htsvoiceを使いたい場合
+
+`OpenJTalkForUnity.Speak("今日は良い天気ですね。", "takumi_happy");`
 
 <br>
 
