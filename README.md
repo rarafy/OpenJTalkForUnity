@@ -6,23 +6,22 @@ OpenJTalkをUnity上で使うためのプラグインです。
 
 ## 検証環境
 - Windows 10 20H2
-- Unity Editor 2020.1.15f1
+- Unity Editor 2020.3.12f1 (LTS)
 
 <br>
 
 ## 使い方
-1. open_jtalk.7zを解凍して、C:\open_jtalkに配置します。
-
-<img src="https://user-images.githubusercontent.com/33755507/129215445-fa0ad6cc-76d2-4993-915e-44cb423f6c09.png" width="500">
-
-2. OpenJTalkForUnity.unitypackageをインポートします。
+1. OpenJTalkForUnity.unitypackageをインポートします。
 
 <img src="https://user-images.githubusercontent.com/33755507/129216066-e57e084a-2027-4d35-8f19-4ec0d4261dec.png" width="400">
 
-3. Edit > Project Settings > Other Settings > Configuration > Api Compatibility Levelを「.NET 4.x」に変更します。
+2. Edit > Project Settings > Other Settings > Configuration > Api Compatibility Levelを「.NET 4.x」に変更します。
 <img src="https://user-images.githubusercontent.com/33755507/129219061-f24d8638-56f9-405c-b91f-bc76951c6c4a.png" width="300">
 
-4. プログラムを書きます。Assets/OpenJTalkForUnity/SampleSceneあたりを参考にしてください。
+3. プログラムを書きます。Assets/OpenJTalkForUnity/SampleSceneあたりを参考にしてください。
+
+<br>
+## API
 
 <br>
 
@@ -36,7 +35,7 @@ OpenJTalkをUnity上で使うためのプラグインです。
 
 - 違う音声を使いたい
 
-C:\open_jtalk\voice に入っているhtsvoiceであれば使うことが出来ます。Speak()の第二引数で名前を指定します。
+Assets\OpenJTalkForUnity\dll\voice に置かれたhtsvoiceであれば使うことが出来ます。Speak()の第二引数で名前を指定します。
 
 例：takumi_happy.htsvoiceを使いたい場合
 
