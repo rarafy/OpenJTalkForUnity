@@ -64,9 +64,11 @@ OpenJTalkForUnity.Speak("今日は良い天気ですね。", "takumi_happy");
 
 - OpenJTalk、もっとパラメータあったよね？（高度）
 
-`Assets\OpenJTalkForUnity\Scripts\OpenJTalk.cs`を編集することで、それらのパラメータを解禁できます。
-tts.Speed = 1.0;
-みたいな感じで書くと追加のパラメータを編集できます。
+`Assets\OpenJTalkForUnity\Scripts\OpenJTalk.cs`を編集することで、それらのパラメータを解禁できます。<br>
+例えば、Speedパラメータを追加したい場合、`tts.SpeakAsync(text);`の前の行に`tts.Speed = 1.0;`を加えると良いでしょう。<br>
+もちろん、最初の宣言部分を<br>
+`JTalkTTS tts = new JTalkTTS { VoiceName = "tohoku-f01-neutral", Speed = 1.0 }`<br>
+と書き換えることでも実現できます。
 
 <br>
 
