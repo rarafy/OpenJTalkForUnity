@@ -18,12 +18,12 @@ OpenJTalkをUnity上で使うためのプラグインです。
 2. Edit > Project Settings > Other Settings > Configuration > Api Compatibility Levelを「.NET 4.x」に変更します。
 <img src="https://user-images.githubusercontent.com/33755507/129219061-f24d8638-56f9-405c-b91f-bc76951c6c4a.png" width="300">
 
-3. プログラムを書きます。Assets\OpenJTalkForUnity\Sceneあたりを参考にしてください。
+3. プログラムを書きます。`Assets\OpenJTalkForUnity\Scene`を参考にしてください。
 
 <br>
 
 ## API
-いくつかのAPIが用意されています。基本的には`Assets\OpenJTalkForUnity\Scene`を見ながら使ってください。
+いくつかのAPIが用意されています。基本的には`Assets\OpenJTalkForUnity\Scene`を参考にしながら書いてみると良いと思います。
 - `OpenJTalk.VoiceTypeInfo()`
 ：どの声が使えるかを調べ、Debug.Logとして出力します。
 - `OpenJTalk.SpeakRandomVoice(string text, double speed=1.0)`
@@ -42,7 +42,8 @@ OpenJTalkをUnity上で使うためのプラグインです。
 ## Q&A
 - 謎のエラーが出ます
 
-アンマネージドDLLの不具合っぽいです。実使用に支障はありません。
+アンマネージドDLLの不具合っぽいです。実使用に支障はありません。<br>
+どうしても気になる場合はこれらのファイルを削除すると良いでしょう（一部の高度な機能が使えなくなります）。
 ![e1](https://user-images.githubusercontent.com/33755507/129216635-f21a0cfc-8ccc-4e49-bd61-496cdbf8f907.PNG)
 
 <br>
@@ -54,6 +55,14 @@ Assets\OpenJTalkForUnity\dll\voice よりも下に置かれたhtsvoiceであれ�
 例：takumi_happy.htsvoiceを使いたい場合
 
 `OpenJTalkForUnity.Speak("今日は良い天気ですね。", "takumi_happy");`
+
+<br>
+
+- OpenJTalk、もっとパラメータあったよね？（高度）
+
+`Assets\OpenJTalkForUnity\Scripts\OpenJTalk.cs`を編集することで、それらのパラメータを解禁できます。
+tts.Speed = 1.0;
+みたいな感じで書くと追加のパラメータを編集できます。
 
 <br>
 
