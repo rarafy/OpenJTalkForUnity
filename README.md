@@ -1,6 +1,6 @@
 # OpenJTalkForUnity
 OpenJTalkをUnity上で使うためのプラグインです。
-動的に文字列を読み上げさせることが出来ます。
+動的に文字を読み上げることが出来ます。
 
 <br>
 
