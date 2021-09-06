@@ -1,76 +1,77 @@
 # OpenJTalkForUnity
-OpenJTalkをUnity上で使うためのプラグインです。
-動的に文字を読み上げることが出来ます。
+A plug-in for using OpenJTalk on Unity.<br>
+It allows you to read out text dynamically.
+- ReadMe(English)
+- [ReadMe(日本語)](README_JP.md)
 
 <br>
 
-## 検証環境
+## System Requirements
 - Windows 10 20H2
 - Unity Editor 2020.3.12f1 (LTS)
 
 <br>
 
-## 使い方
-1. OpenJTalkForUnity.unitypackageをインポートします。
+## How to use
+1. Import OpenJTalkForUnity.unitypackage to your project
 
 <img src="https://user-images.githubusercontent.com/33755507/129216066-e57e084a-2027-4d35-8f19-4ec0d4261dec.png" width="400">
 
-2. Edit > Project Settings > Other Settings > Configuration > Api Compatibility Levelを「.NET 4.x」に変更します。
+2. Set "Edit > Project Settings > Other Settings > Configuration > Api Compatibility Level" to ".NET 4.x"
 <img src="https://user-images.githubusercontent.com/33755507/129219061-f24d8638-56f9-405c-b91f-bc76951c6c4a.png" width="300">
 
-3. プログラムを書きます。`Assets\OpenJTalkForUnity\Scene`を参考にしてください。
+3. Write the program. Refer to `Assets\OpenJTalkForUnity\Scene`.
 
 <br>
 
 ## API
-いくつかのAPIが用意されています。基本的には`Assets\OpenJTalkForUnity\Scene`を参考にしながら書いてみると良いと思います。
+There are several APIs available. Basically, you should refer to `Assets\OpenJTalkForUnity\Scene` to write scripts.
 - `OpenJTalk.VoiceTypeInfo()`
-：どの声が使えるかを調べ、Debug.Logとして出力します。
+：Check which voices are available and output as Debug.Log.
 - `OpenJTalk.SpeakRandomVoice(string text, double speed=1.0)`
-：ランダムな声で喋ります。
-- `OpenJTalk.Speak(string text = "こんにちは", string VoiceName = "tohoku-f01-neutral", double speed = 1.0)`
-：指定した声と速度で任意の文字列を読み上げます。
-- `OpenJTalk.SpeakRandomVoiceStoppable(string text = "こんにちは", double speed = 1.0)`
-：ランダムな声で喋ります。（Taskなので非同期処理です）
-- `OpenJTalk.SpeakStoppable(string text = "こんにちは", string VoiceName = "tohoku-f01-neutral", double speed = 1.0)`
-：指定した声と速度で任意の文字列を読み上げます。
+：Speaks in a random voice.
+- `OpenJTalk.Speak(string text = "Hello", string VoiceName = "tohoku-f01-neutral", double speed = 1.0)`
+：Reads out an arbitrary string of text at a specified voice and speed.
+- `OpenJTalk.SpeakRandomVoiceStoppable(string text = "Hello", double speed = 1.0)`
+：It speaks in a random voice. (It's a Task, so it's asynchronous.)
+- `OpenJTalk.SpeakStoppable(string text = "Hello", string VoiceName = "tohoku-f01-neutral", double speed = 1.0)`
+：Reads out an arbitrary string of text at a specified voice and speed.
 - `OpenJTalk.StopSpeaking()`
-：喋るのを途中でやめます。
+：Stop vocalizing midway.
 
 <br>
 
 ## Q&A
-- 謎のエラーが出ます
+- I'm getting a mysterious error.
 
-アンマネージドDLLの不具合っぽいです。実使用に支障はありません。<br>
-どうしても気になる場合は該当のファイルを削除すると良いでしょう（一部の高度な機能が使えなくなります）。
+It seems to be a problem with the unmanaged DLL. It does not interfere with actual use.<br>
+If you are really concerned about this, you can delete the corresponding file (some advanced features will not be available).
 ![e1](https://user-images.githubusercontent.com/33755507/129216635-f21a0cfc-8ccc-4e49-bd61-496cdbf8f907.PNG)
 
 <br>
 
-- 違う音声を使いたい
+- I want to use a different voice.
 
-Assets\OpenJTalkForUnity\dll\voice よりも下の階層に置かれたhtsvoiceであれば使うことが出来ます。Speak()の第二引数で名前を指定します。
+You can use any htsvoice that is placed in the hierarchy below Assets\OpenJTalkForUnity\dll\voice by specifying its name as the second argument of Speak().
 
-例：takumi_happy.htsvoiceを使いたい場合
+Ex：When you want to use "takumi_happy.htsvoice"
 
 `
 void Start(){
-OpenJTalkForUnity.Speak("今日は良い天気ですね。", "takumi_happy");
+OpenJTalkForUnity.Speak("Today is a nice day.", "takumi_happy");
 }
 `
 
 <br>
 
-- OpenJTalk、もっとパラメータあったよね？（高度）
+- Um, OpenJTalk, I think there were more parameters? (Advanced)
 
-`Assets\OpenJTalkForUnity\Scripts\OpenJTalk.cs`を編集することで、それらのパラメータを解禁できます。<br>
-例えば、Speedパラメータを追加したい場合、`tts.SpeakAsync(text);`の前の行に`tts.Speed = 1.0;`を加えると良いでしょう。<br>
-もちろん、最初の宣言部分を<br>
-`JTalkTTS tts = new JTalkTTS { VoiceName = "tohoku-f01-neutral", Speed = 1.0 }`<br>
-と書き換えることでも実現できます。
+You can unlock those parameters by editing `Assets\OpenJTalkForUnity\Scripts\OpenJTalk.cs`.<br>
+For example, if you want to add a Speed parameter, you can add `tts.Speed = 1.0;` to the line before `tts.SpeakAsync(text);`.<br>
+Of course, you can also rewrite the first part of the declaration as<br>
+`JTalkTTS tts = new JTalkTTS { VoiceName = "tohoku-f01-neutral", Speed = 1.0 }`.
 
 <br>
 
-## 参照文献
+## References
 [jtalkdll(GitHub)](https://github.com/rosmarinus/jtalkdll)
