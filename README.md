@@ -6,7 +6,10 @@ It allows you to read out text dynamically.
 
 <br>
 
-## System Requirements
+## Environment
+
+The code is developed on following environments. Note that these are NOT minimum version requirements.
+
 - Windows 10 20H2
 - Unity Editor 2020.3.12f1 (LTS)
 
