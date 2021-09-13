@@ -1,4 +1,4 @@
-# OpenJTalkForUnity
+# OpenJTalk For Unity
 A plug-in for using OpenJTalk on Unity.<br>
 It allows you to read out text dynamically.
 - ReadMe(English)
