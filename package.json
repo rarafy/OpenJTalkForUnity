@@ -1,9 +1,16 @@
 {
-  "name": "jp.rarafy.openjtalk_for_unity",
-  "version": "1.11.3",
-  "author": "rarafy",
-  "displayName": "OpenJTalkForUnity",
-  "description": "A plug-in for using OpenJTalk on Unity.\r\nIt allows you to read out text dynamically.",
-  "unity": "2020.3",
-  "unityRelease": "12f1"
+    "name": "jp.rarafy.openjtalk_for_unity",
+    "version": "1.11.3",
+    "author": "rarafy",
+    "displayName": "OpenJTalkForUnity",
+    "description": "A plug-in for using OpenJTalk on Unity.\r\nIt allows you to read out text dynamically.",
+    "unity": "2020.3",
+    "unityRelease": "12f1",
+    "samples": [
+        {
+            "displayName": "OpenJTalk Sample",
+            "description": "Examples how to use OpenJTalkForUnity. [Import Recommended]",
+            "path": "_Sample"
+        }
+    ]
 }
