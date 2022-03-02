@@ -61,6 +61,12 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "jp.rarafy.openjtalk_for_unity": {
+      "version": "file:OpenJTalkForUnity",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
