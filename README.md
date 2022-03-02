@@ -27,7 +27,7 @@ The code is developed on following environments. Note that these are NOT minimum
 <br>
 
 ## How to use
-1. Import OpenJTalkForUnity.unitypackage to your project
+1. Import [OpenJTalkForUnity.unitypackage](https://github.com/rarafy/OpenJTalkForUnity/releases/download/open_jtalk-1.11v3/OpenJTalkForUnity.unitypackage) to your project
 
 <img src="https://user-images.githubusercontent.com/33755507/129216066-e57e084a-2027-4d35-8f19-4ec0d4261dec.png" width="400">
 
