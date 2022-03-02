@@ -7,6 +7,7 @@
 ![](https://img.shields.io/badge/Unity%202019.x-supported-blue)
 ![](https://img.shields.io/badge/Unity%202020.x-supported-blue)
 ![](https://img.shields.io/github/downloads/rarafy/OpenJTalkForUnity/total)
+![](https://img.shields.io/github/repo-size/rarafy/OpenJTalkForUnity)
 
 # OpenJTalk For Unity
 A plug-in for using OpenJTalk on Unity.<br>
