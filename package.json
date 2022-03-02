@@ -10,7 +10,7 @@
         {
             "displayName": "OpenJTalk Sample",
             "description": "Examples how to use OpenJTalkForUnity. [Import Recommended]",
-            "path": "_Sample"
+            "path": "Samples/Sample"
         }
     ]
 }
