@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/openupm-v1.5.0-blue)
+
 # OpenJTalk For Unity
 A plug-in for using OpenJTalk on Unity.<br>
 It allows you to read out text dynamically.
