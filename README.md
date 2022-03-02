@@ -1,4 +1,12 @@
 ![](https://img.shields.io/badge/openupm-v1.5.0-blue)
+![](https://img.shields.io/github/v/release/rarafy/OpenJTalkForUnity?include_prereleases)
+![](https://img.shields.io/github/release-date/rarafy/OpenJTalkForUnity)
+![](https://img.shields.io/github/license/rarafy/OpenJTalkForUnity)
+![](https://img.shields.io/badge/PRs-welcome-orange)
+![](https://img.shields.io/badge/Unity%202018.3%20or%20later.x-supported-blue)
+![](https://img.shields.io/badge/Unity%202019.x-supported-blue)
+![](https://img.shields.io/badge/Unity%202020.x-supported-blue)
+![](https://img.shields.io/github/downloads/rarafy/OpenJTalkForUnity/total)
 
 # OpenJTalk For Unity
 A plug-in for using OpenJTalk on Unity.<br>
