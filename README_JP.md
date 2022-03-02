@@ -22,6 +22,15 @@ OpenJTalkをUnity上で使うためのプラグインです。
 
 <br>
 
+#### ※Package Managerを使いたい場合
+Window>Package Manager で Add package from git URL...を選択し、```https://github.com/rarafy/OpenJTalkForUnity.git?path=_Project/Packages/OpenJTalkForUnity``` と入力してください。
+
+![image](https://user-images.githubusercontent.com/33755507/156442876-af659d0e-be22-4c82-a972-10bd8c389b34.png)
+
+__サンプルプログラムもインポートしましょう__。サンプルプログラムは```Assets/Samples/OpenJTalkForUnity/1.1.13/Sample```に配置されます。
+
+<br><br>
+
 ## API
 いくつかのAPIが用意されています。基本的には`Assets\OpenJTalkForUnity\Scene`を参考にしながら書いてみると良いと思います。
 - `OpenJTalk.VoiceTypeInfo()`
