@@ -1,22 +1,8 @@
 {
-  "name": "jp.rarafy.openJTalkForUnity",
+  "name": "jp.rarafy.openjtalk_for_unity",
   "version": "1.11.3",
-  "displayName": "OpenJTalk For Unity",
-  "description": "A plug-in for using OpenJTalk on Unity.\nIt allows you to read out text dynamically.",
+  "displayName": "OpenJTalkForUnity",
+  "description": "A plug-in for using OpenJTalk on Unity.\r\nIt allows you to read out text dynamically.",
   "unity": "2020.3",
-  "unityRelease": "12f1",
-  "dependencies": {
-    "rarafy.plugin.speak": "git@github.com:rarafy/
-OpenJTalkForUnity.git"
- },
- "keywords": [
-    "keyword1",
-    "keyword2",
-    "keyword3"
-  ],
-  "author": {
-    "name": "rarafy",
-    "email": "i.rarafy@gmail.com",
-    "url": "https://github.com/rarafy"
-  }
+  "unityRelease": "12f1"
 }
