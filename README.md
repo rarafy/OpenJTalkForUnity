@@ -38,6 +38,15 @@ The code is developed on following environments. Note that these are NOT minimum
 
 <br>
 
+#### When you want to use Package Manager
+In "Window>Package Manager", select "Add package from git URL...". Then type ```https://github.com/rarafy/OpenJTalkForUnity.git?path=_Project/Packages/OpenJTalkForUnity``` and press "Add".
+
+![image](https://user-images.githubusercontent.com/33755507/156442876-af659d0e-be22-4c82-a972-10bd8c389b34.png)
+
+__Let's also import the sample program__. The sample programs will be placed in ``Assets/Samples/OpenJTalkForUnity/1.1.13/Sample``.
+
+<br><br>
+
 ## API
 There are several APIs available. Basically, you should refer to `Assets\OpenJTalkForUnity\Scene` to write scripts.
 - `OpenJTalk.VoiceTypeInfo()`
