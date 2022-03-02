@@ -11,7 +11,7 @@ OpenJTalkをUnity上で使うためのプラグインです。
 <br>
 
 ## 使い方
-1. OpenJTalkForUnity.unitypackageをインポートします。
+1. [OpenJTalkForUnity.unitypackage](https://github.com/rarafy/OpenJTalkForUnity/releases/download/open_jtalk-1.11v3/OpenJTalkForUnity.unitypackage)をインポートします。
 
 <img src="https://user-images.githubusercontent.com/33755507/129216066-e57e084a-2027-4d35-8f19-4ec0d4261dec.png" width="400">
 
