@@ -71,6 +71,21 @@ OpenJTalkForUnity.Speak("今日は良い天気ですね。", "takumi_happy");
 
 <br>
 
+- アプリが読み上げ中に止まってしまうんですけど
+
+非同期（Task）という機能を使うと解決できます。例えば
+
+```
+void Start()
+{
+  Task.Run(() => OpenJTalk.Speak("こんにちは。良い天気ですね。"));
+}
+```
+
+↑ このようにタスクを使えばアプリが動作中に停止しないようになります。
+
+<br>
+
 - OpenJTalk、もっとパラメータあったよね？（高度）
 
 `Assets\OpenJTalkForUnity\Scripts\OpenJTalk.cs`を編集することで、それらのパラメータを解禁できます。<br>
