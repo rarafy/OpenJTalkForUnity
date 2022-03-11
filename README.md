@@ -87,6 +87,21 @@ OpenJTalkForUnity.Speak("Today is a nice day.", "takumi_happy");
 
 <br>
 
+- My app stops while reading out loud.
+
+A feature called Asynchronous (Task) can be used to solve this problem. For example
+
+```
+void Start()
+{
+  Task.Run(() => OpenJTalk.Speak("Today is a nice day."));
+}
+```
+
+↑ Using tasks in this way will prevent the application from stopping while it is running.
+
+<br>
+
 - Um, OpenJTalk, I think there were more parameters? (Advanced)
 
 You can unlock those parameters by editing `Assets\OpenJTalkForUnity\Scripts\OpenJTalk.cs`.<br>
