@@ -3,6 +3,8 @@
 ![](https://img.shields.io/github/release-date/rarafy/OpenJTalkForUnity)
 ![](https://img.shields.io/github/license/rarafy/OpenJTalkForUnity)
 ![](https://img.shields.io/badge/PRs-welcome-orange)
+![](https://img.shields.io/github/issues/rarafy/OpenJTalkForUnity)
+![](https://img.shields.io/github/issues-closed/rarafy/OpenJTalkForUnity)
 ![](https://img.shields.io/badge/Unity%202018.3%20or%20later.x-supported-blue)
 ![](https://img.shields.io/badge/Unity%202019.x-supported-blue)
 ![](https://img.shields.io/badge/Unity%202020.x-supported-blue)
